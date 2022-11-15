@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
-import reactLogo from './assets/react.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Home from './pages/home/Home';
 
 function App() {
 	const [adventures, setAdventures] = useState([]);
@@ -12,8 +14,12 @@ function App() {
 	console.log(adventures);
 
 	return (
-		<div className='App'>
-			<h1 className='text-3xl font-bold underline'>Hello world!</h1>
+		<div className='container'>
+			<BrowserRouter>
+				<Routes>
+					<Route path='/' element={<Home />} />
+				</Routes>
+			</BrowserRouter>
 		</div>
 	);
 }
