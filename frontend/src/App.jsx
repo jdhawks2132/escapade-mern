@@ -6,6 +6,7 @@ import AdventureList from './pages/adventures/AdventureList';
 import AdventureDetail from './pages/adventures/AdventureDetail';
 import CreateAdventure from './pages/create/CreateAdventure';
 import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 
 function App() {
 	const [adventures, setAdventures] = useState([]);
@@ -21,15 +22,17 @@ function App() {
 		<>
 			<BrowserRouter>
 				<Navbar />
-				<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='/adventures' element={<AdventureList />} />
-					<Route
-						path='/adventures/:adventureId'
-						element={<AdventureDetail />}
-					/>
-					<Route path='/create' element={<CreateAdventure />} />
-				</Routes>
+				<main className='container py-10 px-20 mx-auto'>
+					<Routes>
+						<Route path='/' element={<Home />} />
+						<Route path='/adventures' element={<AdventureList />} />
+						<Route
+							path='/adventures/:adventureId'
+							element={<AdventureDetail />}
+						/>
+						<Route path='/create' element={<CreateAdventure />} />
+					</Routes>
+				</main>
 			</BrowserRouter>
 		</>
 	);

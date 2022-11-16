@@ -97,7 +97,7 @@ const adventureSeeds = [
 	{
 		country: 'Bolivia',
 		location: 'La Paz',
-		image: '/images/Bolivia/AdobeStock_293187414.jpeg',
+		image: '/images/Bolivia/AdobeStock_293187414.jpg',
 		activity: 'Mountain Climbing',
 		description:
 			"There are many mountains you can climb around La Paz, and they are all in close vicinity of the city, so you don't have to travel far to reach them.  The mountain range near La Paz is the Cordillera Real, which divides the lowlands of the Amanazon Basin from the high plateus of the Altiplano (high flat lands).  This mountain range, of which is a child of the Andes, has over 120 notable peaks, with the highest being the famous Illimani Mountain which overlooks La Paz City.",
