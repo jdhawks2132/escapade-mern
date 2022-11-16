@@ -7,6 +7,7 @@ import AdventureDetail from './pages/adventures/AdventureDetail';
 import CreateAdventure from './pages/create/CreateAdventure';
 import SearchPage from './pages/search/SearchPage';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
 		<>
 			<BrowserRouter>
 				<Navbar />
-				<main className='container py-10 px-20 mx-auto'>
+				<main className='container py-10 px-10 mx-auto'>
 					<Routes>
 						<Route path='/' element={<Home />} />
 						<Route path='/adventures' element={<AdventureList />} />
