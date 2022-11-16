@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/home/Home';
+import AdventureList from './pages/adventures/AdventureList';
+import AdventureDetail from './pages/adventures/AdventureDetail';
+import CreateAdventure from './pages/create/CreateAdventure';
+import Navbar from './components/Navbar';
 
 function App() {
 	const [adventures, setAdventures] = useState([]);
@@ -14,13 +18,20 @@ function App() {
 	console.log(adventures);
 
 	return (
-		<div className='container'>
+		<>
 			<BrowserRouter>
+				<Navbar />
 				<Routes>
 					<Route path='/' element={<Home />} />
+					<Route path='/adventures' element={<AdventureList />} />
+					<Route
+						path='/adventures/:adventureId'
+						element={<AdventureDetail />}
+					/>
+					<Route path='/create' element={<CreateAdventure />} />
 				</Routes>
 			</BrowserRouter>
-		</div>
+		</>
 	);
 }
 
