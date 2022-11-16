@@ -8,8 +8,6 @@ const Navbar = () => {
 		setIsOpen(!isOpen);
 	};
 
-	console.log(isOpen);
-
 	return (
 		<nav className=' bg-indigo-800 py-4 px-11 w-screen md:flex md:justify-between md:items-center'>
 			<div className='flex items-center justify-between'>
