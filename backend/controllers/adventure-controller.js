@@ -77,10 +77,28 @@ const deleteAdventure = async (req, res) => {
 	}
 };
 
+// Search adventures for a given query
+const searchAdventures = async (req, res) => {
+	try {
+		const { q } = req.query;
+		const adventures = await Adventure.find({
+			$or: [
+				{ country: { $regex: q, $options: 'i' } },
+				{ location: { $regex: q, $options: 'i' } },
+				{ activity: { $regex: q, $options: 'i' } },
+			],
+		});
+		res.status(200).json(adventures);
+	} catch (err) {
+		res.status(500).json({ message: err.message });
+	}
+};
+
 module.exports = {
 	getAllAdventures,
 	getAdventureById,
 	createAdventure,
 	updateAdventure,
 	deleteAdventure,
+	searchAdventures,
 };

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import SearchBar from './Searchbar';
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -45,11 +46,13 @@ const Navbar = () => {
 					</button>
 				</div>
 			</div>
+
 			<div
 				className={`flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 items-end ${
 					isOpen ? 'flex' : 'hidden'
 				}`}
 			>
+				<SearchBar />
 				<Link
 					to='/adventures'
 					className=' text-center w-28 text-white text-lg border border-solid border-white rounded-md p-2 hover:text-gray-800 hover:bg-slate-100'

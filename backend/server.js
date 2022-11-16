@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3001;
-const adventureRoutes = require('./routes/adventure-routes');
+const apiRoutes = require('./routes');
 const mongoose = require('mongoose');
 
 // Middleware
@@ -14,12 +14,12 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use('/api/adventures', adventureRoutes);
+app.use('/api', apiRoutes);
 
 mongoose
 	.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/escapade')
 	.then(() => {
-		app.listen(process.env.PORT, () => {
+		app.listen(port, () => {
 			console.log('connected to db & listening on port 4000!');
 		});
 	})
