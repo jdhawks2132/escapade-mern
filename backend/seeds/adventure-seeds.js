@@ -57,7 +57,7 @@ const adventureSeeds = [
 	{
 		country: 'Argentina',
 		location: 'Los Glaciares National Park',
-		image: '/images/Argentina/AdobeStock_195792066.jpeg',
+		image: '/images/Argentina/AdobeStock_195792066.jpg',
 		activity: 'Perito Moreno Glacier',
 		description:
 			"Perito Moreno is quite a sight to see, as it is one of Argetina's most important tourist attractions.  The whole glacier has an area of 96.53 square miles; in other words, you could fit all of Washington D.C. and Manhattan inside of it and still have 5 square miles to play with.  The Glacier also has an impressive height of 256 feet, with glacial towers constantly breaking off and falling into Lago Argentino.  Perito Moreno is interesting because, unlike other glaciers around the world that are receeding, Perito Moreno is advancing still, moving forward around 2 meters (6.5 feet) every day.  Entrance to the park will cost you a whopping $7, and a round trip by bus from El Calafate will cost you $15",
@@ -65,7 +65,7 @@ const adventureSeeds = [
 	{
 		country: 'Argentina',
 		location: 'Ushuaia',
-		image: '/images/Argentina/AdobeStock_189484797.jpeg',
+		image: '/images/Argentina/AdobeStock_189484797.jpg',
 		activity: 'Tierra Del Fuego',
 		description:
 			'Also known as The End Of The World, Ushiaia is the southernmost point in the world before antartica.  Ushuaia is the gateway to Antartica cruises and tours to nearby Isla Yécapasela, also known as Penguin Island for its penguin colonies.',
@@ -161,7 +161,7 @@ const adventureSeeds = [
 	{
 		country: 'Colombia',
 		location: 'Quindío',
-		image: '/images/Colombia/AdobeStock_168513024.jpeg',
+		image: '/images/Colombia/AdobeStock_168513024.jpg',
 		activity: 'Cocora Valley',
 		description:
 			"Cocora Valley is famous for having the world's tallest palm trees.  These wax palm trees grow up to 60 meters (200 feet) tall.  These palm trees grow at 2500 meters above sea level on steep grassy hills all over the valley, which makes it quite a sight.  The entrance fee to the valley is about $2.",
@@ -177,7 +177,7 @@ const adventureSeeds = [
 	{
 		country: 'Chile',
 		location: 'Patagonia',
-		image: '/images/Chile/AdobeStock_349197361.jpeg',
+		image: '/images/Chile/AdobeStock_349197361.jpg',
 		activity: 'Fitz Roy',
 		description:
 			"Monte Fitz Roy is a mountain in Patagonia, on the border. It is located in the Southern Patagonian Ice Field, near El Chaltén village and Viedma Lake.  The peak sits at 11,171 feet, and its first ascent was in 1952.  Fitz Roy's original name is Chaltén, which means 'Smoking Mountain'.  This is due to a rare aeolic phenomenon that makes its top always appear as it was surrounded by clouds, which gives the mountain a smoking volcano look.",
@@ -185,7 +185,7 @@ const adventureSeeds = [
 	{
 		country: 'Chile',
 		location: 'Patagonia',
-		image: '/images/Chile/AdobeStock_277543031.jpeg',
+		image: '/images/Chile/AdobeStock_277543031.jpg',
 		activity: 'Torres Del Paine',
 		description:
 			"Torres del Paine National Park, in Chile’s Patagonia region, is known for its soaring mountains, bright blue icebergs that cleave from glaciers and golden pampas (grasslands) that shelter rare wildlife such as llama-like guanacos. Some of its most iconic sites are the 3 granite towers from which the park takes its name and the horn-shaped peaks called Cuernos del Paine.  Torres Del Paine has an area of 700 sq.-mi.  The in person tickets are $34, but there are also many hiking and treking tour options.  Torres Del Paine is one of the most magical places on earth, and should be seen by everyone who can.  The W Trek is Torres del Paine's most famous hiking route, with views of the granite towers that give the park its name. In full, it's a four or five day hike that can be walked without carrying gear or food, between refugios or campsites.",
