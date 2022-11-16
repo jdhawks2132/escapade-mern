@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AdventureCard = ({ adventure }) => {
 	return (
@@ -6,17 +6,19 @@ const AdventureCard = ({ adventure }) => {
 		// the card should be a link to the adventure detail page
 
 		<div className='bg-white rounded-lg shadow-lg overflow-hidden'>
-			<div className='px-4 py-2'>
-				<h2 className='text-2xl font-bold text-gray-800'>
-					{adventure.country}
-				</h2>
-				<p className='text-gray-600'>{adventure.location}</p>
-			</div>
-			<img
-				className='h-48 w-full object-cover'
-				src={adventure.image}
-				alt={adventure.activity}
-			/>
+			<Link to={`/adventures/${adventure._id}`}>
+				<div className='px-4 py-2'>
+					<h2 className='text-2xl font-bold text-gray-800'>
+						{adventure.country}
+					</h2>
+					<p className='text-gray-600'>{adventure.location}</p>
+				</div>
+				<img
+					className='h-48 w-full object-cover'
+					src={adventure.image}
+					alt={adventure.activity}
+				/>
+			</Link>
 		</div>
 	);
 };

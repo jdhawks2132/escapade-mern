@@ -9,15 +9,6 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 
 function App() {
-	const [adventures, setAdventures] = useState([]);
-	useEffect(() => {
-		fetch('/api/adventures')
-			.then((res) => res.json())
-			.then((adventures) => setAdventures(adventures));
-	}, []);
-
-	console.log(adventures);
-
 	return (
 		<>
 			<BrowserRouter>
@@ -26,10 +17,7 @@ function App() {
 					<Routes>
 						<Route path='/' element={<Home />} />
 						<Route path='/adventures' element={<AdventureList />} />
-						<Route
-							path='/adventures/:adventureId'
-							element={<AdventureDetail />}
-						/>
+						<Route path='/adventures/:id' element={<AdventureDetail />} />
 						<Route path='/create' element={<CreateAdventure />} />
 					</Routes>
 				</main>

@@ -14,7 +14,7 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use('/adventures', adventureRoutes);
+app.use('/api/adventures', adventureRoutes);
 
 mongoose
 	.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/escapade')
