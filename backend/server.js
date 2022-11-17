@@ -16,8 +16,10 @@ app.use((req, res, next) => {
 
 // cors for netlify
 app.use(
-	cors({origin: 'https://63766878fbf2ea08af96a9a5--escapade-mern.netlify.app'})
-)
+	cors({
+		origin: 'https://63766878fbf2ea08af96a9a5--escapade-mern.netlify.app',
+	})
+);
 
 // Routes
 app.use('/api', apiRoutes);

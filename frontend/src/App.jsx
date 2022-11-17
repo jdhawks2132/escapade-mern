@@ -15,7 +15,7 @@ function App() {
 		<>
 			<BrowserRouter>
 				<Navbar />
-				<main className='container py-10 px-10 mx-auto'>
+				<main>
 					<Routes>
 						<Route path='/' element={<Home />} />
 						<Route path='/adventures' element={<AdventureList />} />
