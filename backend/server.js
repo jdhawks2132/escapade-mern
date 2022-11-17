@@ -4,6 +4,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 const apiRoutes = require('./routes');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 // Middleware
 app.use(express.json());
@@ -12,6 +13,11 @@ app.use((req, res, next) => {
 	console.log(req.path, req.method);
 	next();
 });
+
+// cors for netlify
+app.use(
+	cors({origin: 'https://637665204fa4223f973a4c3f--escapade-mern.netlify.app/'})
+)
 
 // Routes
 app.use('/api', apiRoutes);
