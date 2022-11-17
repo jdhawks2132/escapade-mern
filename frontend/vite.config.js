@@ -9,7 +9,7 @@ export default defineConfig({
 	server: {
 		proxy: {
 			'/api': {
-				target: 'http://localhost:4000',
+				target: 'https://637665204fa4223f973a4c3f--escapade-mern.netlify.app/',
 				changeOrigin: true,
 				secure: false,
 			},
