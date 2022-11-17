@@ -19,7 +19,7 @@ const CreateAdventure = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			await fetch('/api/adventures', {
+			await fetch('https://escapade-mern.herokuapp.com/api/adventures', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',

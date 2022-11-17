@@ -9,7 +9,7 @@ const AdventureDetail = () => {
 		data: adventure,
 		isPending,
 		error,
-	} = useFetch(`/api/adventures/${id}`);
+	} = useFetch(`https://escapade-mern.herokuapp.com/api/adventures/${id}`);
 
 	return (
 		<>

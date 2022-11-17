@@ -12,7 +12,7 @@ const SearchPage = () => {
 		data: adventures,
 		isPending,
 		error,
-	} = useFetch('/api/search?q=' + query);
+	} = useFetch('https://escapade-mern.herokuapp.com/api/search?q=' + query);
 
 	const adventureList = adventures?.map((adventure) => (
 		<AdventureCard key={adventure._id} adventure={adventure} />

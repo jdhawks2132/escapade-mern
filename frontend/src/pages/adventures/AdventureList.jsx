@@ -7,7 +7,7 @@ const AdventureList = () => {
 		data: adventures,
 		isPending,
 		error,
-	} = useFetch('/api/adventures');
+	} = useFetch('https://escapade-mern.herokuapp.com/api/adventures');
 
 	const adventureList = adventures?.map((adventure) => (
 		<AdventureCard key={adventure._id} adventure={adventure} />
