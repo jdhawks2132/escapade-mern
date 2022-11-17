@@ -5,13 +5,14 @@
 		"mongoose": "^6.7.2",
 		"nodemon": "^2.0.20"
 	},
-	
 	"scripts": {
 		"dev": "nodemon server.js",
+		"start": "node server.js",
 		"seed": "node seeds/adventure-seeds.js"
 	},
 	"engines": {
-		"node": "16.17.0"
+		"node": "16.x",
+		"npm": "8.15.0"
 	},
 	"name": "backend",
 	"version": "1.0.0",
