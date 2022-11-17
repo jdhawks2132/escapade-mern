@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import SearchBar from './Searchbar';
+import SearchBar from './SearchBar';
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
