@@ -7,6 +7,7 @@
 ![nodejs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ![mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![tailwindcss](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 ![netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
@@ -16,21 +17,22 @@
 
 ## Purpose
 
-Escapade is a South American travel app that allows users to browse and search for exciting adventures in Argentina, Brazil, Bolivia, Chile, Colombia, and Peru. Users can also add their own adventures to the app. 
+Escapade is a South American travel app that allows users to browse and search for exciting adventures in Argentina, Brazil, Bolivia, Chile, Colombia, and Peru. Users can also add their own adventures to the app.
 
 ## Built With
 
-* JavaScript
-* React
-* NodeJS
-* Express
-* MongoDB Atlas
+- JavaScript
+- React
+- NodeJS
+- Express
+- MongoDB Atlas
+- Tailwind CSS
 
 ## Deployment
 
-* [Heroku](https://www.heroku.com/)
-* [Netlify](https://www.netlify.com/)
+- [Heroku](https://www.heroku.com/)
+- [Netlify](https://www.netlify.com/)
 
 ## Live Deployment Link
 
-* [Escapade](https://escapade-mern.netlify.app/)
+- [Escapade](https://escapade-mern.netlify.app/)
