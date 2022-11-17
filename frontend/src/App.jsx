@@ -13,7 +13,7 @@ import Sidebar from './components/Sidebar';
 function App() {
 	return (
 		<>
-			<BrowserRouter>
+			<BrowserRouter basename='/'>
 				<Navbar />
 				<main className='container py-10 px-10 mx-auto'>
 					<Routes>
