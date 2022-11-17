@@ -10,10 +10,10 @@ const Home = () => {
 			style={{ backgroundImage: `url(${Bolivia})` }}
 		>
 			<div className='flex flex-col items-center justify-center h-full'>
-				<h2 className='text-6xl text-white font-bold mb-11'>
+				<h2 className='text-6xl text-white font-bold mb-11 text-center'>
 					Adventure Calls...
 				</h2>
-				<img src={SAMap} alt='South America Map' className='w-1/6' />
+				<img src={SAMap} alt='South America Map' className='w-1/2 md:w-1/6' />
 			</div>
 		</div>
 	);

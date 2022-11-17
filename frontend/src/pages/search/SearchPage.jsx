@@ -19,7 +19,7 @@ const SearchPage = () => {
 	));
 
 	return (
-		<div>
+		<div className='container py-10 px-10 mx-auto'>
 			{isPending && <div>Loading...</div>}
 			{error && <div>{error}</div>}
 			{adventures && (
